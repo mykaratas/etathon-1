@@ -80,7 +80,8 @@ CREATE TABLE petshop_db.animal_sales(
   PRIMARY KEY (id),
   FOREIGN KEY (cat) REFERENCES petshop_db.cats(id),
   FOREIGN KEY (dog) REFERENCES petshop_db.dogs(id),
-  FOREIGN KEY (bird) REFERENCES petshop_db.birds(id)
+  FOREIGN KEY (bird) REFERENCES petshop_db.birds(id),
+  FOREIGN KEY (customer) REFERENCES petshop_db.customers(id)
 );
 
 
